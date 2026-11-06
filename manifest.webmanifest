@@ -1,0 +1,24 @@
+{
+  "name": "My Voice Music Studio (V6 Test)",
+  "short_name": "My Voice Studio",
+  "description": "Mobile music studio preview with saved singers, live duet setup, playlists and recordings.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#080a20",
+  "background_color": "#070a19",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
