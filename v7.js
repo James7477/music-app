@@ -125,11 +125,11 @@
     if(!fromQueue)resetShuffle(id);
     const changed=selectedSongId!==id;
     selectedSongId=id;
-    if(activeTab!=='library')tab('library');
+    if(!fromQueue&&activeTab!=='library')tab('library');
     else if(changed)renderAll();
     else drawPlayer();
     if(changed||player.ended){try{player.currentTime=0;}catch(e){}}
-    get('selectedDetails').scrollIntoView({behavior:'smooth',block:'nearest'});
+    if(!fromQueue&&activeTab==='library')get('selectedDetails').scrollIntoView({behavior:'smooth',block:'nearest'});
     await playSelected();
   }
   async function advance(direction,automatic=false){
