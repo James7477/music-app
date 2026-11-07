@@ -48,4 +48,13 @@ Songs, audio files, recordings, and voice samples are stored in your browser's *
 - `demo/*.mp3` — four original instrumental genre clips
 - `manifest.webmanifest` — installable web-app metadata where supported
 
-Version: V7 Neon Edition TEST — November 2026.
+Version: V8 Neon Edition TEST — November 7, 2026.
+
+## V8 local music player (November 7, 2026)
+
+- **Find / Import** can select several audio files at once (MP3, M4A, WAV, and other supported formats) from the phone. It skips duplicate or unsupported selections and stores accepted files in this device's IndexedDB.
+- **My Songs** includes a **Play** shortcut on each playable song and **Play This Playlist** for the currently selected playlist. Songs without attached audio are skipped.
+- Playback provides play/pause, previous/next, shuffle, repeat-all, repeat-one, and automatic next-track playback. A compact mini-player appears on supported non-recording pages while music is playing.
+- The existing one-tap **Record Over Track** opens the live solo/duet recording studio; the music player pauses to prevent overlapping audio when entering recording-related pages.
+- Playback depends on the browser supporting the imported audio format. Downloaded files from DRM-protected streaming apps may not be playable or importable.
+- Keep browser storage enabled; deleting the site's data removes locally saved songs, voice profiles, and recordings. Export or download important files as backups.
