@@ -37,3 +37,21 @@ a{color:#b4e7ff}.flash{position:fixed;top:70px;left:max(10px,calc(50% - 460px));
 }
 @media(max-width:380px){.v7-rec-panel{flex-wrap:wrap}.v7-microphone{display:none}.v7-rec-content{width:100%}.v7-banner-icon{opacity:.6}.v7-action span{font-size:10px}.v7-source-row{gap:5px}.v7-toggle{font-size:11px;padding:5px}}
 @media(prefers-reduced-motion:reduce){.v7-wave-card.is-recording .v7-wave-bars i,.tabpage:not(.home-page){animation:none!important}}
+
+/* V8 local music player, compact and thumb-friendly on phones. */
+.v7-play-all{margin-top:12px;width:100%}
+.v7-player-transport{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin:12px 0 8px}
+.v7-transport{background:#293052;color:#f7edff;border:1px solid #9461bd;border-radius:12px;min-height:48px;padding:8px 4px;font-weight:800;font-size:12px;touch-action:manipulation}
+.v7-transport-primary{background:linear-gradient(125deg,#ffd160,#fa8fcb);color:#24102e;border-color:#fff0ac;font-size:14px}
+.v7-transport[aria-pressed="true"]{background:linear-gradient(135deg,#35acdd,#7545d5);color:white;border-color:#c0ddff}
+.v7-transport:disabled{opacity:.4;cursor:not-allowed}
+#v7QueueInfo{color:#ffd88f;font-weight:700}
+.songitem{flex-wrap:wrap}.songitem .songmeta{flex:1;min-width:125px}.songitem>.btn{flex-shrink:0}
+.v7-mini-player[hidden]{display:none!important}
+.v7-mini-player{display:flex;align-items:center;justify-content:space-between;gap:9px;background:linear-gradient(120deg,#342056,#152d4b);border:1px solid #d676f0;border-radius:15px;padding:9px 12px;margin:0 0 13px;box-shadow:0 4px 15px #0006}
+.v7-mini-player>span{min-width:0;flex:1;font-size:12px;font-weight:850;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.v7-mini-actions{display:flex;gap:6px;align-items:center}
+.v7-mini-actions button{background:#38325a;color:white;border:1px solid #8e75b2;border-radius:10px;min-height:39px;min-width:39px;padding:5px 9px;font-weight:750}
+.v7-mini-actions button:last-child{font-size:11px;background:#e4aaef;color:#260d2b}
+@media(max-width:720px){.v7-player-transport{gap:4px}.v7-transport{font-size:10px;min-height:47px;padding:6px 2px}.v7-transport-primary{font-size:12px}.songitem>.btn{font-size:11px;padding:9px 10px;min-height:39px}.v7-mini-actions button:last-child{font-size:10px}}
+@media(max-width:380px){.v7-transport{font-size:9px}.v7-mini-player{padding:8px}.v7-mini-actions button{min-width:34px;padding:4px 6px}}
